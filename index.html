@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Showcase</title>
+</head>
+<body>
+    <!-- Container principal para centralizar o conteúdo -->
+    <div class="container">
+        <!-- Cabeçalho da página -->
+        <header>
+            <!-- Opções de exibição de produtos -->
+            <div class="options">
+                <h2 id="total-products">Total</h2> <!-- Mostra o total de produtos -->
+                <label for="products-row">Exibir:</label> <!-- Rótulo para a seleção de quantidade de produtos por linha -->
+                <select id="products-per-row"> <!-- Dropdown para escolher a quantidade de produtos por linha -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Área principal de exibição de produtos -->
+        <main>
+            <div id="product-list"></div> <!-- Local onde os produtos serão listados -->
+        </main>
+    </div>
+
+    <!-- Script JavaScript deferido para melhor desempenho -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
